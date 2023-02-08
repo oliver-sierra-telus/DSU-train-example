@@ -24,5 +24,9 @@ public class Console {
         return scanner.nextLine();
     }
 
+    public static void nothing(){
+        
+    }
+
     
 }
