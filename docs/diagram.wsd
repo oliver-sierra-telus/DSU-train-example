@@ -1,0 +1,87 @@
+@startuml train
+
+
+object TrainGame
+
+object Train
+object TrainGoal
+object accelerate 
+object brake 
+object wagon
+object mainWagon
+object passengerWagon
+object payloadWagon
+object weight
+
+object Human
+object Computer
+
+object mainWagonGoals
+
+object motorPower
+
+
+object Player
+
+object PlayerGoal
+
+object ShortTime
+object forward
+object stop
+
+object track
+object size
+
+object engine
+
+object trackGoals 
+object paint
+object position
+object managePosition
+
+track *-- size
+
+track o-right- trackGoals
+paint -left-|> trackGoals 
+managePosition --|> TrainGoal
+
+TrainGame *-- Player
+TrainGame *-- track
+TrainGame *-- Train
+
+
+Player -right-> Train
+track -left-> Train
+
+
+Player o-left- PlayerGoal
+ShortTime -up-|> PlayerGoal
+forward -up-|> PlayerGoal
+stop -up-|> PlayerGoal
+
+
+
+Train o-- TrainGoal
+Train *-- wagon:0..*
+Train *-- position
+Train *-- mainWagon:1
+accelerate -up-|> TrainGoal
+brake -up-|> TrainGoal 
+
+mainWagon -right-|> wagon
+
+wagon *-right- weight
+
+passengerWagon -up-|> wagon
+payloadWagon -up-|> wagon
+
+mainWagon *-- engine
+mainWagon o-- mainWagonGoals
+motorPower -up-|> mainWagonGoals
+
+Human --|> Player
+Computer --|> Player
+
+
+
+@enduml
