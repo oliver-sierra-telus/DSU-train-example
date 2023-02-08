@@ -25,7 +25,7 @@ public class Console {
     }
 
     public static void nothing(){
-        
+        System.out.println("nothing");
     }
 
     
