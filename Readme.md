@@ -1,6 +1,6 @@
 # dsu team members
 
-1
+1 Andres Cordova
 
 2
 
