@@ -1,12 +1,12 @@
 # dsu team members
 
-1
+1 Andres Cordova
 
-2 algo mas
+2 Oscar Recinos1
 
-3
+3 Eder Ramos
 
-4 oliver sierra
+4 Daniel Lopez
 
-5
 
+5 Ivette Carolina Pinto León
